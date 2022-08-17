@@ -1,0 +1,784 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: right;
+    font-size:x-large;
+}
+
+/* index */
+.club {
+    color: rgb(18, 39, 223);
+    margin: 3rem;
+    display: flex;
+    font-size: larger;
+}
+
+.rac{
+    color: rgb(18, 39, 223);
+    margin: 3rem; 
+}
+
+.altura{
+    height: 30rem;
+    margin: 3rem;
+}
+
+footer {
+    background-color: rgb(54, 178, 250);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(17, 17, 224, 1) 36%, rgba(0, 212, 255, 1) 59%);
+}
+
+footer img {
+    width: 70%;
+}
+
+.redesFooter {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.redesFooter div {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+
+    footer {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .redesFooter {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .redesFooter img {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    footer {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(54, 178, 250);
+    }
+
+    .redesFooter {
+        height: 100%;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .redesFooter div {
+
+        width: 20%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+}
+
+/* Partidos */
+
+.partidosEnCasa {
+    width: 100%;
+    height: 100%;
+}
+
+.localia {
+    grid-area: h1Locales;
+}
+
+.localia {
+    color: rgb(18, 39, 223);
+}
+
+.localia{
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fecha9 {
+    grid-area: juegoNueve;
+}
+
+.fecha9 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.racVar {
+    grid-area: conArsenal;
+}
+
+.racVar {
+    width: 100%
+}
+
+.fecha11 {
+    grid-area: juegoOnce;
+}
+
+.fecha11 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.racVtigre {
+    grid-area: conTigre;
+}
+
+.racVtigre {
+    width: 100%;
+}
+
+
+.fecha13 {
+    grid-area: juegoTrece;
+}
+
+.fecha13 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.racVboca {
+    grid-area: conBoca;
+}
+
+.racVboca {
+    width: 100%;
+}
+
+.fecha15 {
+    grid-area: juegoQuince;
+}
+
+.fecha15 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.racVslo {
+    grid-area: conSlo;
+}
+
+.racVslo {
+    width: 100%;
+}
+
+.fecha17 {
+    grid-area: juegoDiesisiete;
+}
+
+.fecha17 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.racVarg {
+    grid-area: conArgJr;
+}
+
+.racVarg {
+    width: 100%;
+}
+
+.partidosEnCasa {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 2rem;
+    grid-template-areas:
+        'h1Locales'
+        'juegoNueve'
+        'conArsenal'
+        'juegoOnce'
+        'conTigre'
+        'juegoTrece'
+        'conBoca'
+        'juegoQuince'
+        'conSlo'
+        'juegoDiesisiete'
+        'conArgJr';
+    justify-items: center;
+}
+
+@media screen and (min-width: 600px) {
+
+    .localia {
+        font-size: 2rem;
+    }
+
+    .fecha9 {
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .fecha11 {
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .fecha13 {
+
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .fecha15 {
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
+    .fecha17 {
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .partidosEnCasa {
+        margin: 1rem 0 3rem 0;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5rem auto;
+        gap: 2rem;
+        grid-template-areas:
+            'h1Locales h1Locales'
+            'juegoNueve conArsenal'
+            'juegoOnce conTigre'
+            'juegoTrece conBoca'
+            'juegoQuince conSlo'
+            'juegoDiesisiete conArgJr';
+        justify-items: center;
+    }
+
+    .localia {
+        grid-area: h1Locales;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .fecha9 {
+        grid-area: juegoNueve;
+        display: flex;
+        align-items: center;
+    }
+
+    .fecha11 {
+        grid-area: juegoOnce;
+        display: flex;
+        align-items: center;
+    }
+
+    .fecha13 {
+        grid-area: juegoTrece;
+        display: flex;
+        align-items: center;
+    }
+
+    .fecha15 {
+        grid-area: juegoQuince;
+        display: flex;
+        align-items: center;
+    }
+
+    .fecha17 {
+        grid-area: juegoDiesisiete;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+/* Animaciones */
+
+.fecha9{
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fecha11{
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fecha13{
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fecha15{
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fecha17{
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Servicios */
+
+.beneficiados{
+    width: 100%;
+    height: 100%;
+}
+
+.acceso {
+    grid-area: accesoCancha;
+    color: rgb(18, 39, 223);
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center
+}
+
+.acceso{
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.ubicaciones{
+    grid-area: canchaUbicac;
+}
+.ubicaciones{
+    width: 100%;
+}
+
+.benefVit {
+    grid-area: vitalicios;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 6px rgb(54, 178, 250);
+}
+
+.benefAbon{
+    grid-area: abonados;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 6px rgb(54, 178, 250);
+}
+
+.benefSoc {
+    grid-area: socios;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 6px rgb(54, 178, 250);
+}
+
+.benefNoSoc{
+
+    grid-area: noSocios;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 6px rgb(54, 178, 250);
+}
+
+.beneficiados {
+    margin: 1rem 0 3rem 0;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 2rem;
+    grid-template-areas:
+        'accesoCancha'
+        'canchaUbicac'
+        'vitalicios'
+        'abonados'
+        'socios'
+        'noSocios';
+    justify-items:center;
+}
+
+@media screen and (min-width: 600px) {
+    .beneficiados{
+        font-size: 2rem;
+    }
+
+    .benefVit {
+        grid-area: vitalicios;
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        border: solid 6px rgb(54, 178, 250);
+        text-align: left;
+    }
+    
+    .benefAbon{
+        grid-area: abonados;
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        border: solid 6px rgb(54, 178, 250);
+        text-align: left;
+    }
+    
+    .benefSoc {
+        grid-area: socios;
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        border: solid 6px rgb(54, 178, 250);
+        text-align: left;
+    }
+    
+    .benefNoSoc{
+    
+        grid-area: noSocios;
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        border: solid 6px rgb(54, 178, 250);
+        text-align: left;
+    }
+
+    @media screen and (min-width:1024px) {
+
+        .beneficiados{
+            margin: 1rem 0 3rem 0;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 5rem auto;
+            gap: 2rem;
+            grid-template-areas:
+            'accesoCancha accesoCancha'
+            'canchaUbicac canchaUbicac'
+            'vitalicios abonados'
+            'socios noSocios';
+            justify-items: center;
+        }
+    }
+}
+/* Animaciones */
+
+.benefVit{
+    height: 100%;
+    background: rgb(195,244,253);
+background: linear-gradient(90deg, rgba(195,244,253,1) 48%, rgba(0,212,255,1) 69%);
+}
+
+.benefAbon{
+    height: 100%;
+    background: rgb(195,244,253);
+background: linear-gradient(90deg, rgba(195,244,253,1) 48%, rgba(0,212,255,1) 69%);
+}
+
+.benefSoc{
+    height: 100%;
+    background: rgb(195,244,253);
+background: linear-gradient(90deg, rgba(195,244,253,1) 48%, rgba(0,212,255,1) 69%);
+}
+
+.benefNoSoc{
+    height: 100%;
+    background: rgb(195,244,253);
+background: linear-gradient(90deg, rgba(195,244,253,1) 48%, rgba(0,212,255,1) 69%);
+}
+
+/*Galeria */
+
+.galeriasRacing {
+    width: 100%;
+    height: 100%;
+}
+
+
+.momentos {
+    grid-area: h1Momentos;
+}
+
+.momentos {
+    color: rgb(18, 39, 223);
+}
+
+.momentos{
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.videoUno {
+    grid-area: unoVideo;
+}
+
+.videoUno {
+    width: 100%;
+}
+
+.videoDos {
+    grid-area: dosVideo;
+}
+
+.videoDos {
+    width: 100%;
+}
+
+.videoTres {
+    grid-area: tresVideo;
+}
+
+.videoTres {
+    width: 100%;
+}
+
+.videoCuatro {
+    grid-area: cuatroVideo;
+}
+
+.videoCuatro {
+    width: 100%;
+}
+
+.galeriaRacing {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 2rem;
+    grid-template-areas:
+        'h1Momentos'
+        'unoVideo'
+        'dosVideo'
+        'tresVideo'
+        'cuatroVideo';
+    justify-items: center;
+}
+
+@media screen and (min-width: 600px) {
+
+    .momentos {
+        font-size: 2rem;
+    }
+
+    footer {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .redesFooter {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .redesFooter img {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .galeriaRacing {
+        margin: 1rem 0 3rem 0;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5rem auto;
+        gap: 2rem;
+        grid-template-areas:
+            'h1Momentos h1Momentos'
+            'unoVideo dosVideo'
+            'tresVideo cuatroVideo';
+        justify-items: center;
+    }
+
+    .momentos {
+        grid-area: h1Momentos;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+
+/* Contacto */
+
+.informaciones {
+    width: 100%;
+    height: 100%;
+}
+.infoRacing {
+    grid-area: noticiasRacing;
+}
+
+.infoRacing {
+    width: 100%;
+    color: rgb(18, 39, 223);
+    margin: 2rem;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.infoRacing{
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
